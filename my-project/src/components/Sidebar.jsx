@@ -9,16 +9,16 @@ import Perfil from '../assets/perfil.jpeg';
 const Sidebar = () => {
   const location = useLocation();
 
-  // Função para verificar se o item está ativo
+  
   const isActive = (path) => location.pathname === path;
 
   return (
-    <div className="h-screen bg-black text-slate-100 flex flex-col justify-between pl-32 w-4/12 font-sans border-r border-r-zinc-400 border-opacity-30">
+    <div className="h-screen pr-2 bg-black text-slate-100 flex flex-col justify-between pl-32 w-4/12 font-sans border-r border-r-zinc-400 border-opacity-30">
       <div className="w-64">
         <div className="text-3xl flex mb-4 mt-4 pl-2">
           <FaXTwitter className="" />
         </div>
-        <ul className="space-y-2 text-2xl">
+        <ul className="space-y-1 text-2xl">
           <li>
             <Link
               to="/"
@@ -120,12 +120,12 @@ const Sidebar = () => {
             </Link>
           </li>
         </ul>
-        <button className="bg-white text-xl hover:bg-slate-300 text-black py-3 rounded-3xl w-64 mt-2 font-semibold font-mono">
+        <button className="bg-white text-xl mb-2 hover:bg-slate-300 text-black py-3 rounded-3xl w-64 mt-2 font-semibold font-mono">
           Post
         </button>
       </div>
 
-      {/* Profile Section */}
+   
       <div className="flex items-center justify-between w-64 hover:rounded-3xl hover:bg-slate-300 hover:bg-opacity-15 p-2 mb-4 rounded-lg">
         <div className="flex items-center">
           <div className="w-10 h-10 bg-gray-600 rounded-full flex items-center mt-2 justify-center text-xl">

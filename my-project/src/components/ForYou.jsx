@@ -22,7 +22,7 @@ const users = [
       username: "@google",
       time: "4h",
       postText: "Explorando novos recursos do Search!",
-      profilePic: "/path/to/google-logo.jpg", // Substitua pelo link correto
+      profilePic: "/path/to/google-logo.jpg",
       social: "Google",
       socialIcon: <FaGoogle size={24} className="text-gray-600" />,
       comments: "15",
@@ -36,7 +36,7 @@ const users = [
       username: "@facebook",
       time: "6h",
       postText: "Temos novidades incríveis para nossos usuários!",
-      profilePic: "/path/to/facebook-logo.jpg", // Substitua pelo link correto
+      profilePic: "/path/to/facebook-logo.jpg", 
       social: "Facebook",
       socialIcon: <FaFacebook size={24} className="text-blue-700" />,
       comments: "20",
@@ -50,7 +50,7 @@ const users = [
       username: "@instagram",
       time: "1d",
       postText: "Compartilhando momentos especiais.",
-      profilePic: "/path/to/instagram-logo.jpg", // Substitua pelo link correto
+      profilePic: "/path/to/instagram-logo.jpg", 
       social: "Instagram",
       socialIcon: <FaInstagram size={24} className="text-pink-500" />,
       comments: "12",
@@ -71,7 +71,7 @@ const users = [
               className="h-12 rounded-full border-2"
             />
   
-            {/* Área de post */}
+
             <div className="flex-1 ml-2 mt-2">
               <input className="text-2xl font-semibold mb-4 bg-black text-slate-300 border-none border-inherit" placeholder='What is happening?!'/>
               <div className="flex items-center justify-between">
@@ -91,7 +91,7 @@ const users = [
           </div>
         </div>
   
-        {/* Lista de postagens */}
+     
         {users.map((user) => (
           <div key={user.id} className='p-4 border-slate-300 border-opacity-30 border-b-2'>
             <div className='flex justify-between'>
@@ -117,7 +117,7 @@ const users = [
               </div>
             </div>
             
-            {/* Interações */}
+    
             <div className='flex mt-2 ml-14   justify-between text-slate-300  opacity-80'>
                 <div className='flex gap-16 justify-between'>
                 <div className='flex items-center gap-1 '>

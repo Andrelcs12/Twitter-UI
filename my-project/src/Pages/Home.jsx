@@ -40,12 +40,12 @@ const Home = () => {
   ];
 
   return (
-    <div className="bg-black h-screen w-full flex">
+    <div className="bg-black h-screen w-full flex ">
       {/* Left Section */}
       <div className="w-9/12 border-r-2 border-slate-300 font-semibold border-opacity-30">
         {/* Tabs */}
         <div>
-          <ul className="flex gap-4 text-slate-300 border-b-2 border-slate-300 font-semibold border-opacity-30 h-12 justify-around items-center">
+          <ul className="flex  text-slate-300 border-b-2 border-slate-300 font-semibold border-opacity-30 h-12 justify-around items-center">
             {Object.keys(sections).map((section) => (
               <li
                 key={section}
@@ -80,7 +80,7 @@ const Home = () => {
         </div>
 
         {/* Premium Promotion */}
-        <div className="p-4 rounded-lg mb-4 border-2 border-gray-300 border-opacity-30">
+        <div className="p-4 rounded-lg mb-2 border-2 border-gray-300 border-opacity-30">
           <h1 className="font-bold text-lg">Try Premium for free today</h1>
           <p className="text-gray-400 text-sm">
             Upgrade your experience with less ads, power tools, and more with Premium.
@@ -93,7 +93,7 @@ const Home = () => {
         {/* What's Happening */}
         <div>
           <ul className=" border-slate-300 border-opacity-20 border-2 rounded-lg">
-            <h1 className="font-bold text-2xl  pl-4 pt-4">Whats happening</h1>
+            <h1 className="font-bold text-2xl  pl-4 pt-2">Whats happening</h1>
             {topics.map((topic, index) => (
               <li key={index} className="pl-4 rounded-lg flex justify-between items-center p-3">
                 <div>
